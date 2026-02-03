@@ -1,0 +1,17 @@
+{
+  "name": "sacred2-global-res-codec",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Sacred 2 global.res encoder/decoder library + CLI",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "s2-global-res": "bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
