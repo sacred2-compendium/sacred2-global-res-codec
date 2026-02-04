@@ -1,8 +1,8 @@
 import utf16LeEncode from './utf16-le-encode.js';
 
-const textEncoder8 = new TextEncoder();// UTF-8
-
 export default function (buffer) {
+  const textEncoder8 = new TextEncoder();// UTF-8
+
   let index = 0;
   const view = new DataView(buffer, 0);
 

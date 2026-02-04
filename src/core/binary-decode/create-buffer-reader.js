@@ -1,7 +1,7 @@
-const textDecoder8 = new TextDecoder();// UTF-8
-const textDecoder16 = new TextDecoder('utf-16le');// UTF-16 LE
-
 export default function (buffer) {
+  const textDecoder8 = new TextDecoder();// UTF-8
+  const textDecoder16 = new TextDecoder('utf-16le');// UTF-16 LE
+
   let index = 0;
   const view = new DataView(buffer, 0);
 
@@ -9,7 +9,7 @@ export default function (buffer) {
     getCurrentIndex: function () {
       return index;
     },
-    getLastIndex: function () {
+    getByteLength: function () {
       return view.byteLength;
     },
     getUint16: function () {

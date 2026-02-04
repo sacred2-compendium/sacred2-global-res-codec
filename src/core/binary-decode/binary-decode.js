@@ -42,7 +42,7 @@ export default function (buffer) {
       });
     }
 
-    const compressedDataSize = reader.getLastIndex() - reader.getCurrentIndex();
+    const compressedDataSize = reader.getByteLength() - reader.getCurrentIndex();
     const compressedData = reader.getCompressedData(compressedDataSize);
 
     return {

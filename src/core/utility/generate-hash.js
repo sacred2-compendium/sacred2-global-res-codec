@@ -4,7 +4,6 @@ export default function (lokaId) {
 
   lokaId = lokaId.toUpperCase();
   const array = new Uint32Array(1);
-  array[0] = 0;
 
   for (const character of lokaId) {
     const utfCodePoint = character.codePointAt(0);
